@@ -12,8 +12,6 @@ const initialState={
 const url = 'https://66a07b337053166bcabb89f5.mockapi.io/Products';
 export const fetchProducts = createAsyncThunk('products/fetchProducts', async () => {
     const res = await axios.get(url);
-    
-    console.log(res)
     return res.data;
 });
 
